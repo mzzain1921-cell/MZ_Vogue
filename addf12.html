@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxi Dress</title>
+    <link rel="stylesheet" href="add-to-cart.css">
+    <link rel="shortcut icon" href="female 24.jpeg" type="image/x-icon">
+</head>
+<body>
+    <body>
+  <section class="all">
+    <div class="images">
+      <div class="main-img">
+        <img src="female 23.jpeg" alt="" class="mains">
+        <img src="female 24.jpeg" alt="" class="hovers">
+      </div>
+      <div class="short-img">
+        <img src="female 23.jpeg" alt="">
+        <img src="female 24.jpeg" alt="">
+      </div>
+    </div>
+
+    <div class="bg">
+      <div class="back-btn">
+        <a href="female12.html">← Back To Product</a>
+      </div>
+
+      <div class="your-cart">
+        <h1>Your Cart</h1>
+      </div>
+
+      <div class="details">
+        <div class="main-h">
+          <h2 id="cartProductName">Maxi Dress
+</h2>
+        </div>
+        <div class="p">
+   Flowing maxi winter dress designed for warmth. Provides elegant movement with cozy comfort.
+
+
+        </div>
+        <p>Size: <span id="cartSize">—</span></p>
+        <p>Quantity: <span id="cartQty">—</span></p>
+        <p>Price: $<span id="cartPrice">45.99</span></p>
+      </div>
+
+      <div class="cart-summary">
+        <p>Subtotal: $<span id="cartSubtotal">0.00</span></p>
+        <button id="checkoutBtn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </section>
+   
+
+
+               
+
+              <footer class="footer">
+            <div class="footall">
+               <div class="footers">
+                 <div class="footh">
+                    <h1>MZ Vogue</h1>
+                    <p>Comfortable styles you can wear every day</p>
+                </div>
+               </div>
+                <div class="footers">
+                 <div class="footh">
+                    <h2>Quick Links</h2>
+                    <div class="ft-links">
+                        <a href="index.html">Home</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+               </div>
+
+
+                 <div class="footers">
+                 <div class="footh">
+                    <h2>Customer Care</h2>
+                    <div class="ft-links">
+                        <a href="shipping.html">Shipping Information</a>
+                        <a href="return.html">Return & Exchange</a>
+                        <a href="order-tracking.html">Order Tracking</a>
+                        
+                    </div>
+                </div>
+               </div>
+
+                <div class="footers">
+                 <div class="footh">
+                    <h2>Connect</h2>
+                    <div class="ft-links">
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDsbFxNjHHrtTKlgWNNcLllTFrqWqcKNvHNCBkpcgMLXjWDTGclgDtkhWGfNJdGVgJSKDx" target="_blank">Email: info.mzvogue@gmail.com</a>
+                        <p>Phone: +1 000 123 4567</p>
+                       <p>Location: USA</p>
+                        <p>Hours: Mon – Sat | 9AM – 5PM</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="sep"></div>
+            <div class="end">
+                <p>© 2026 MZ Vogue. All rights reserved.</p>
+            </div>
+            <div class="end-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <p> | </p>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+            <div class="end-icons">
+                <a href=""><img src="facebook-icon.png" alt=""></a>
+                <a href=""><img src="insta-icon.png" alt=""></a>
+                <a href=""><img src="tiktok-icon.png" alt=""></a>
+                <a href=""><img src="yt-icon.png" alt=""></a>
+                <a href=""><img src="linkedin-icon.png" alt=""></a>
+            </div>
+         </footer>
+
+ <script>
+    window.onload = function() {
+      const cartItem = JSON.parse(localStorage.getItem('cartItem'));
+
+      if (!cartItem) {
+        // Optional: redirect back or show message
+        document.getElementById('cartProductName').innerText = 'No item added';
+        document.getElementById('cartSize').innerText = '—';
+        document.getElementById('cartQty').innerText = '—';
+        document.getElementById('cartPrice').innerText = '0.00';
+        document.getElementById('cartSubtotal').innerText = '0.00';
+        return;
+      }
+
+      // Fill data
+      document.getElementById('cartProductName').innerText = cartItem.name;
+      document.getElementById('cartSize').innerText = cartItem.size;
+      document.getElementById('cartQty').innerText = cartItem.quantity;
+      document.getElementById('cartPrice').innerText = cartItem.price.toFixed(2);
+      document.getElementById('cartSubtotal').innerText = cartItem.subtotal;
+    };
+
+    // Optional: Checkout button action
+    document.getElementById('checkoutBtn')?.addEventListener('click', function() {
+      alert('Checkout functionality would go here!');
+      // In real app: send to payment gateway
+    });
+
+window.onload = function() {
+  const cartItem = JSON.parse(localStorage.getItem('cartItem'));
+
+  if (!cartItem) {
+    document.getElementById('cartProductName').innerText = 'No item added';
+    document.getElementById('cartSize').innerText = '—';
+    document.getElementById('cartQty').innerText = '—';
+    document.getElementById('cartPrice').innerText = '0.00';
+    document.getElementById('cartSubtotal').innerText = '0.00';
+    return;
+  }
+
+  document.getElementById('cartProductName').innerText = cartItem.name;
+  document.getElementById('cartSize').innerText = cartItem.size;
+  document.getElementById('cartQty').innerText = cartItem.quantity;
+  document.getElementById('cartPrice').innerText = cartItem.price.toFixed(2);
+  document.getElementById('cartSubtotal').innerText = cartItem.subtotal;
+};
+
+// ✅ Proceed to checkout → price save + redirect
+document.getElementById('checkoutBtn').addEventListener('click', function () {
+  const subtotal = document.getElementById('cartSubtotal').innerText;
+
+  // price save
+  localStorage.setItem('checkoutTotal', subtotal);
+
+  // redirect
+  window.location.href = "checkoutf12.html";
+});
+
+  </script>
+</body>
+    
+</body>
+</html>
