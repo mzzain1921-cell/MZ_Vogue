@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Successful</title>
+<link rel="stylesheet" href="thankyou.css">
+ <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="check"></div>
+    <h1>Payment Successful</h1>
+    <p>Thank you for shopping with <b>MZ Vogue</b></p>
+
+    <div class="order">
+      Order ID: <b id="orderId">---</b>
+    </div>
+
+    <div class="total">
+      Total Paid: $<span id="orderTotal">0.00</span>
+    </div>
+
+    <a href="index.html">Continue Shopping</a>
+  </div>
+</div>
+
+<script>
+const order = JSON.parse(localStorage.getItem("orderSuccess"));
+
+if(order){
+  document.getElementById("orderId").innerText = order.orderId;
+  document.getElementById("orderTotal").innerText = order.total;
+}else{
+  document.getElementById("orderId").innerText = "N/A";
+}
+</script>
+</body>
+</html>
