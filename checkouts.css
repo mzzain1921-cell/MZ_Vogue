@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.checkout {
+    width: 1150px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    gap: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+.h {
+    font-family: "Poppins", sans-serif;
+    color: rgb(47, 47, 47);
+    font-size: 19px;
+    position: relative;
+    top: -10px;
+}
+
+.place {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.one {
+    padding: 10px;
+    padding-right: 438px;
+    width: 257px;
+}
+
+.one input {
+    padding: 200px;
+}
+
+.f2 {
+    padding: 10px;
+    padding-right: 170px;
+}
+
+.f3 {
+    padding: 10px;
+    padding-right: 303px;
+}
+
+.f4 {
+    padding: 10px;
+    padding-right: 37px;
+}
+
+.f5 {
+    padding: 10px;
+    padding-right: 170px;
+}
+
+.f textarea {
+    font-family: "Poppins", sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    position: sticky;
+}
+
+.right h1 {
+    font-size: 36px;
+    color: rgb(47, 47, 47);
+}
+
+.images {
+    width: 155px;
+    display: flex;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.heading {
+    color: rgb(47, 47, 47);
+}
+
+.images img {
+    width: 100%;
+}
+
+select {
+    padding: 10px;
+    padding-right: 121px;
+}
+
+.total {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.pay {
+    background: #c89b63;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.credit img {
+    width: 24px;
+}
+
+.credit {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-right: 207px;
+    gap: 5px;
+    background: #fff;
+    border: 2px solid rgb(90, 62, 43);
+    font-size: 18px;
+}
+
+.credit:active {
+    border: 2px solid rgb(90, 62, 43);
+    color: rgb(90, 62, 43);
+}
+
+.bank {
+    display: flex;
+    gap: 20px;
+}
+
+.bank-n {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cn {
+    padding: 11px;
+    padding-right: 247px;
+}
+
+.b1 {
+    display: flex;
+
+}
+
+.bn1 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 19px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.bn2 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 19px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.bi1 {
+    padding: 10px;
+    padding-right: 191px;
+}
+
+.bank-n img {
+    position: relative;
+    width: 109px;
+    left: -120px;
+}
+
+.bb {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .checkout {
+        flex-direction: column;
+        margin: -11px -15px;
+    }
+
+    .one {
+        padding: 10px;
+        padding-right: 63px;
+        width: 236px;
+        margin-left: 2px;
+    }
+
+    .place {
+        gap: 14px;
+    }
+
+    .f {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .f2 {
+        padding: 10px;
+        padding-right: 122px;
+        width: 180px;
+        margin-left: 2px;
+    }
+
+    .f3 {
+        padding: 10px;
+        padding-right: 86px;
+        width: 218px;
+        margin-left: 2px;
+    }
+
+    .f4 {
+        padding: 10px;
+        padding-right: 0px;
+        width: 304px;
+        margin-left: 2px;
+    }
+
+    select {
+        padding: 10px;
+        padding-right: 0px;
+        width: 317px;
+        margin-left: 2px;
+    }
+
+    .f5 {
+        padding: 10px;
+        padding-right: 0px;
+        width: 304px;
+        margin-left: 2px;
+    }
+
+    .f textarea {
+        font-family: "Poppins", sans-serif;
+        padding-top: 6px;
+        padding-left: 10px;
+        font-size: 13px;
+        width: 304px;
+        margin-left: 2px;
+    }
+
+    .bank {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        margin-top: 14px;
+    }
+
+    .credit {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-right: 189px;
+        gap: 5px;
+        background: #fff;
+        border: 2px solid rgb(90, 62, 43);
+        width: 186px;
+        margin-left: 2px;
+        color: rgb(90, 62, 43);
+    }
+
+    .bank-n {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .cn {
+        padding: 11px;
+        padding-right: 129px;
+    }
+
+    .b1 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .bi1 {
+        padding: 10px;
+        padding-right: 191px;
+        margin-top: 2px;
+        width: 106px;
+    }
+
+    .pay {
+        width: 15%;
+    }
+
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    .checkout {
+        max-width: 1150px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 30px;
+        display: flex;
+        gap: 42px;
+        font-family: "Poppins", sans-serif;
+        flex-direction: column;
+    }
+
+    .all {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .f textarea {
+        font-family: "Poppins", sans-serif;
+        padding-top: 10px;
+        padding-left: 19px;
+        font-size: 15px;
+    }
+
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: max-content;
+}

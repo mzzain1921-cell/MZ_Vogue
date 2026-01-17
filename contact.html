@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="contact-h">
+        <h1>Contact Us</h1>
+        <p>If you have any questions about our products, orders, shipping, or returns, feel free to reach out. Our team is always here to help you.</p>
+    </div>
+
+    <div class="contact-all">
+        <div class="contact-c">
+            <h2>Get In Touch</h2>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDsbFxNjHHrtTKlgWNNcLllTFrqWqcKNvHNCBkpcgMLXjWDTGclgDtkhWGfNJdGVgJSKDx" target="_blank"><b>Email: </b>info.mzvogue@gmail.com</a>
+            <p><b>Phone: </b> +1 000 123 4567</p>
+            <p><b>Location:  </b>USA</p>
+            <p><b>Hours:  </b>Mon – Sat | 9AM – 5PM</p>
+        </div>
+       <form action="submit.html" method="post" class="contact-f">
+
+    <input type="text" name="name" placeholder="Full Name" required>
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <input type="text" name="subject" placeholder="Subject" required>
+
+    <textarea name="message" placeholder="Enter Your Message" required></textarea>
+
+    <button  class="submit-btn" type="submit" >Submit Message</button>
+
+</form>
+
+    </div>
+    <div class="last">
+        <p>We usually respond within 24 hours on working days.</p>
+    </div>
+
+      <footer class="footer">
+            <div class="footall">
+               <div class="footers">
+                 <div class="footh">
+                    <h1>MZ Vogue</h1>
+                    <p>Comfortable styles you can wear every day</p>
+                </div>
+               </div>
+                <div class="footers">
+                 <div class="footh">
+                    <h2>Quick Links</h2>
+                    <div class="ft-links">
+                        <a href="index.html">Home</a>
+                        <a href="#products-h">Shop</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+               </div>
+
+
+                 <div class="footers">
+                 <div class="footh">
+                    <h2>Customer Care</h2>
+                    <div class="ft-links">
+                        <a href="shipping.html">Shipping Information</a>
+                        <a href="return.html">Return & Exchange</a>
+                        <a href="order-tracking.html">Order Tracking</a>
+                        
+                    </div>
+                </div>
+               </div>
+
+                <div class="footers">
+                 <div class="footh">
+                    <h2>Connect</h2>
+                    <div class="ft-links">
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDsbFxNjHHrtTKlgWNNcLllTFrqWqcKNvHNCBkpcgMLXjWDTGclgDtkhWGfNJdGVgJSKDx" target="_blank">Email: info.mzvogue@gmail.com</a>
+                        <p>Phone: +1 000 123 4567</p>
+                       <p>Location: USA</p>
+                        <p>Hours: Mon – Sat | 9AM – 5PM</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="sep"></div>
+            <div class="end">
+                <p>© 2026 MZ Vogue. All rights reserved.</p>
+            </div>
+            <div class="end-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <p> | </p>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+            <div class="end-icons">
+                <a href=""><img src="facebook-icon.png" alt=""></a>
+                <a href=""><img src="insta-icon.png" alt=""></a>
+                <a href=""><img src="tiktok-icon.png" alt=""></a>
+                <a href=""><img src="yt-icon.png" alt=""></a>
+                <a href=""><img src="linkedin-icon.png" alt=""></a>
+            </div>
+         </footer>
+
+         <script>
+  document.querySelector(".submit-btn").addEventListener("click", function (e) {
+    e.preventDefault(); // form submit roko
+
+    // yahan form validation hogi (required fields)
+    if (this.closest("form").checkValidity()) {
+      window.location.href = "submit.html";
+    } else {
+      this.closest("form").reportValidity();
+    }
+  });
+</script>
+</body>
+</html>
